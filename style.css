@@ -1,0 +1,335 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+        
+}
+header .header-head{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    padding: 0 40px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around   ;
+    gap: 20px;
+}
+header > .header-head > .Categories{
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+header > .header-head > .Categories:hover{
+    background-color: lightgray;
+    border-radius: 20px;
+}
+header > .header-head > .srch{
+    padding: 10px;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 20px;
+}
+header > .header-head > .header-singin{
+    padding: 05px;
+    cursor: pointer;
+    width: 100px;
+    background-color: transparent;
+    border: none;
+    transition: 0.7s;
+}
+header > .header-head > .header-singin:hover{
+    background-color: lightgray;
+    border-radius: 20px;
+}
+
+header .header-bottom{
+    width: 50%;
+    display: flex;
+    justify-content:space-around;
+}
+header .header-bottom a{
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    transition: 0.7s;
+    border-radius: 30px;
+}
+header .header-bottom a:hover{
+    background-color: lightgray;
+}
+header i{
+    padding: 10px;
+    border-radius: 50px;
+}
+header i:hover{
+    background-color: aqua;
+}
+
+/* container */
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding-top: 20px;
+    align-items: center;
+}
+.container .section1{
+width: 60%;
+text-align: center;
+display: flex;
+flex-direction: column;
+gap: 20px;
+
+}
+.container .section1 .sec1-cat{
+    width: 100%;
+    display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+    justify-content: space-between;
+}
+.container .section1 .sec1-cat-img{
+    text-align: center;
+    width: 120px;
+}
+
+/* section 2 */
+
+.container .section2{
+        margin-top: 100px;
+        width: 70%;
+        text-align: center;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container .section2 .sec1-cat{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .container .section2 .sec1-cat-img{
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .container .section2 .sec1-cat-img:hover{
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 01px 01px 05px;
+    }
+    
+    .container .section2 .sec1-cat-img img{
+        width: 155px;
+        height: 200px;   
+    }
+    .container  .show-more{
+        border: none;
+        border-radius: 30px;
+        background-color: gray;
+        font-weight: bolder;
+        font-size: 15px;
+        width: 150px;
+        padding: 10px;
+    }
+    .container .section3{
+        width: 90%;
+        justify-content: center;
+        margin-top: 100px;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        flex-direction: column;  
+     }
+    .container .section3 .sec3-cards{
+        width: 100%;
+        flex-wrap: wrap;
+        display: flex;
+        cursor: pointer;
+        flex-direction: row;
+        
+     }
+     
+     .container .section3 .sec3-cards .sec3-card1 {
+        width: 260px;
+        font-size: 18px;
+        font-weight: bold;
+     }
+     .container .section3 .sec3-cards .sec3-card1 .sec3-card1-vid {
+        padding: 10px;
+        border-radius: 10px;
+        transition: 0.7s;
+     }
+     .container .section3 .sec3-cards .sec3-card1 .sec3-card1-vid .card{
+        height: 200px;
+        width: 240px;
+        
+        border-radius: 10px;
+     }
+     
+     .container .section3 .sec3-cards .sec3-card1 .sec3-card1-vid:hover{
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 01px 01px 05px;
+    }
+
+    /* section5 */
+    .section5{
+        width: 100%;
+        margin-top: 50px;
+        background-color:blanchedalmond;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section5 .content{
+        width: 90%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        gap: 50px;
+    }
+    .section5 .content .sec5-content{
+        width: 100%;
+        gap: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .section5 .content .sec5-content .sec5-content1, .sec5-content2, .sec5-content3{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: left;
+    }
+    .sec5-content-submit-btn{
+        padding: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 20px;
+        background-color: transparent;
+        border: 2px solid black;
+        border-radius: 30px;
+    }
+    .sec5-content-submit-btn:hover{
+        box-shadow: 0 0 2px ;
+        border: 3px solid black;
+    }
+
+    /* Section 6 */
+    .container .subscribe{
+        width: 100%;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        background-color:cadetblue;
+    }
+    .container .subscribe .sec6-subscribe{
+        text-align: center;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .container .subscribe .sec6-subscribe-input{
+        width: 40%;
+        border-radius: 30px 0px 0 30px;
+        padding: 10px;
+        font-size: 15px;
+        border-right: 0;
+    }
+    .container .subscribe .sec6-subscribe-btn{
+        width: 15%;
+        border-radius: 0px 30px 30px 0px;
+        padding: 10px;
+        font-size: 15px;
+        border-left: 0;
+    }
+    .container .subscribe .sec6-subscribe-input-btn{
+        justify-content: center;
+        display: flex;
+        
+    }
+    .container .section5 .footer{
+        width: 100%;
+        background-color:steelblue;
+        display: flex;
+        flex-direction: column;
+    }
+    .container .section5 .footer .footer-top{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        padding: 30px;
+        justify-content: center;
+        font-size: 20px;
+    }
+    .container .section5 .footer .footer-bottom{
+        width: 100%; 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color:royalblue;
+
+    }
+    
+    .container .section5 .footer .footer-bottom .footer-bottom-part1{
+        width: 500px;
+        height: 300px;
+        background-color:blue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+    }
+    .container .section5 .footer .footer-bottom .footer-bottom-part1 .f-b-p1-pera{
+        background-color: orangered;
+        font-size: 40px;
+        width: 120px;
+        height: 120px;
+        border-radius: 20px;
+        padding: 40px 20px;        
+        color: #fff;
+        font-weight: bolder;
+    }
+    .container .section5 .footer .footer-bottom .f-b-p1-btn{
+        padding: 20px;
+        border: none;
+        background-color:steelblue;
+        width: 220px;
+        border-radius: 30px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .container .section5 .footer .footer-bottom .f-b-p1-btn:hover{
+        box-shadow: 0 0 10px steelblue;
+        border: 2px solid steelblue;
+    }
+    .container .section5 .footer .footer-bottom .footer-bottom-part2, .footer-bottom-part3, .footer-bottom-part4, .footer-bottom-part5{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
